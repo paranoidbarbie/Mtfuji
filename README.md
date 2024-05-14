@@ -11,22 +11,7 @@ Copy paste the files inside to see the theme being reflected on your screen
 <img src="https://github.com/paranoidbarbie/Mtfuji/blob/main/assets/mtfuji-night.png" style="max-height:500px"/>
 </p>
 
-# Easy installation for who don't know how to install a theme
-
-
-
-```
-
-git clone https://github.com/paranoidbarbie/Mtfuji.git
-cp -r Mtfuji/mtfuji/* ~/.config/
-
-```
-<details>
-  <summary>Spoiler warning</summary>
-  
-   # I didn't expect a noob Hyprland user who can't install a theme
-  
-</details>
+## To install the theme just copy paste the files inside the mtfuji direcotry to your ~/.config (works in arch, not sure about Nix).
 
  <p align="center">
    <h1/> Nvim Configuration </h1>
