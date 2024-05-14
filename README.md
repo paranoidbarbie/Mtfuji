@@ -33,7 +33,7 @@ vim.cmd("set mouse=a")
 #### To change to the dark theme 
 
 > change this line ``` vim.cmd.colorscheme "tokyonight" ``` to ``` vim.cmd.colorscheme "fluromachine" ```
-> Following the above line is the lualine setup ``` options = { theme = 'tokyonight' } `` change it to fluromachine too if you want to ig.
+> Following the above line is the lualine setup ``` options = { theme = 'tokyonight' } ``` change it to fluromachine too if you want to ig.
 
 Know more about the themes [tokyonight](https://github.com/folke/tokyonight.nvim) && [fluoromachine](https://github.com/maxmx03/fluoromachine.nvim)
 
