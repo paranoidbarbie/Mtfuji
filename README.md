@@ -1,7 +1,6 @@
 # Mtfuji
 Hyprland theme based on Mt Fuji , Light / Dark 
 
-Copy paste the files inside to see the theme being reflected on your screen 
 
 <p align="center">
 <img src="https://github.com/paranoidbarbie/Mtfuji/blob/main/assets/mtfuji-day.png" style="max-height:500px"/>
@@ -27,7 +26,6 @@ vim.cmd("set tabstop=4")
 vim.cmd("set shiftwidth=4")
 vim.cmd("set softtabstop=4")
 vim.cmd("set mouse=a")
-
 ```
 
 #### To change to the dark theme 
@@ -46,17 +44,3 @@ List of the rest of the plugins used
 [Telescope](https://github.com/nvim-telescope/telescope.nvim)
 
 #### Kindly check their docs to customise the themes and configs to make it your own. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
