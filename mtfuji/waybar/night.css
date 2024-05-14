@@ -1,0 +1,9 @@
+@define-color mainbg rgba(32, 8, 51, 0.9);
+@define-color modulesbg rgba(23, 16, 84, 1);
+@define-color text #FEFADE;
+@define-color border #7959FD;
+@define-color buttons #FF67D4;
+@define-color pink #FF67D4;
+@define-color purple #594697;
+@define-color critical #FF3600;
+@define-color warning #FFD300;

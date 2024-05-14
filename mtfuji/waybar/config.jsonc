@@ -1,0 +1,128 @@
+{
+  "layer": "top",
+  "position": "left", 
+  //"height": 200,
+  "margin-left": 10,
+  "margin-top": 10,
+  "margin-bottom": 10,
+  "reload_style_on_change": true,
+  "modules-left": ["hyprland/workspaces", "image#album-art"],
+  "modules-center": ["network", "pulseaudio", "battery", "battery#percentage", "clock", "clock#date", "clock#time"],
+  "modules-right" : ["pulseaudio/slider","pulseaudio#percentage", "backlight"],
+    // Modules configuration
+  "hyprland/workspaces": {
+	"format": "{icon}",
+    "on-click": "activate",
+	"format-icons" : {
+		"1": "一",
+		"2": "二",
+		"3": "三",
+		"4": "四",
+		"5": "五",
+		"6": "六",
+		"7": "七",
+		"8": "八",
+		"9": "九",
+		"10": "十"
+		},
+	"persistent-workspaces": {
+		"*": 10 // 5 workspaces by default on every monitor
+	  //"HDMI-A-1": 3 // but only three on HDMI-A-1
+	 }	 
+   },
+	"privacy": {
+	"icon-spacing": 4,
+	"icon-size": 18,
+	"transition-duration": 250,
+	"modules": [
+		{
+			"type": "screenshare",
+			"tooltip": true,
+			"tooltip-icon-size": 24
+		},
+		{
+			"type": "audio-out",
+			"tooltip": true,
+			"tooltip-icon-size": 24
+		},
+		{
+			"type": "audio-in",
+			"tooltip": true,
+			"tooltip-icon-size": 24
+		}
+	]
+	},
+	"network": {
+		"interface": "wlan0",
+		"format": "{ifname}",
+		"format-wifi": "",
+		"format-ethernet": "",
+	//	"format-disconnected": "0", //An empty format will hide the module.
+		"format-disconnected": "",
+		"tooltip-format": "{ifname}",
+		"tooltip-format-wifi": "{essid} ({signalStrength}%) ",
+		"tooltip-format-ethernet": "{ifname} ",
+		"tooltip-format-disconnected": "Disconnected",
+		"max-length": 50
+},
+	"pulseaudio": {
+	"format": "{icon}",
+	"format-bluetooth": "{icon}",
+	"format-muted": "",
+	"format-icons": {
+		"headphones": "",
+		"default": [""]
+	},
+	"scroll-step": 1,
+	"on-click": "pavucontrol"
+},
+  "pulseaudio#percentage": {
+	"on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+	"format": "{volume}%"
+  },
+  "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "interval": 1,
+        "format": "{icon}",
+        "format-charging": "",
+        //"format-good": "",
+        "format-full": " ",
+        "format-icons": [" ", " ", " ", " ", " "]
+    },
+
+	"battery#percentage" : {
+		"interval": 1,
+        "format": "{capacity}%",
+        "format-charging": "{capacity}%"
+
+	},
+  "clock": {
+	"format": "{:%a}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+  },
+  "clock#date": {
+	"format": "{:%d}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+  },
+  "clock#time": {
+	"format": "{:%H\n%M}"
+  },
+
+  "pulseaudio/slider": {
+    "min": 0,
+    "max": 99,
+    "orientation": "vertical"
+  },
+
+  "backlight": {
+	"device": "intel_backlight",
+	"format": "{icon}",
+	"tooltip-format": "{percent}%",
+	"format-icons": [ "", ""]
+  }
+
+}

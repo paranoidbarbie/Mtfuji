@@ -1,0 +1,9 @@
+@define-color mainbg rgba(209, 229, 218, 0.9);
+@define-color modulesbg rgba(34, 144, 207, 1);
+@define-color text #FEFADE;
+@define-color border #3951CA;
+@define-color buttons #FBB4CA;
+@define-color purple #594697;
+@define-color teal #5BD9AA;
+@define-color critical #FF3600;
+@define-color warning #FFD300;

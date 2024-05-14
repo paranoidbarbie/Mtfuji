@@ -1,0 +1,104 @@
+@theme "/dev/null"
+@import "~/.config/rofi/day.rasi"
+// replace day with night for night theme
+window {
+    location: center;
+    anchor:   center;
+    transparency: "real";
+    padding: 10px;
+    border:  0px;
+    border-radius: 10px;
+    //color: @magenta;
+    background-color: @transparent;
+    spacing: 0;
+    children:  [mainbox];
+    orientation: horizontal;
+}
+mainbox {
+    spacing: 0;
+    children: [ inputbar, message, listview ];
+}
+message {
+    border-color: @foreground;
+    border:  0px 2px 2px 2px;
+//    border-radius: 10px;
+    padding: 5;
+    background-color: @tcyan;
+}
+message {
+    font: "Source Code Pro 8";
+    color: @black;
+}
+inputbar {
+    color: @white;
+    padding: 11px;
+    background-color: @blue;
+    border: 2px 2px 2px 2px;
+    border-radius:  15px 15px 0px 0px;
+    border-color: @magenta;
+    font: "Source Code Pro 18";
+}
+entry,prompt,case-indicator {
+    text-font: inherit;
+    text-color:inherit;
+}
+prompt {
+    margin:     0px 0.3em 0em 0em ;
+}
+listview {
+    padding: 8px;
+    border-radius: 0px 0px 20px 20px;
+    border-color: @magenta;
+    border: 0px 2px 2px 2px;
+    background-color: @backlight;
+    dynamic: false;
+    lines: 10;
+}
+element {
+    padding: 3px;
+    vertical-align: 0.5;
+//    border: 2px;
+    border-radius: 4px;
+    background-color: transparent;
+    color: @black;
+    font:inherit;
+}
+element-text {
+    background-color: inherit;
+    text-color:       inherit;
+}
+element selected.normal {
+    background-color: @blue;
+}
+element normal active {
+    foreground: @blue;
+}
+element normal urgent {
+    foreground: @lightred;
+}
+element alternate normal {
+}
+element alternate active {
+    foreground: @blue;
+}
+element alternate urgent {
+    foreground: @lightred;
+}
+element selected active {
+    background-color: @blue;
+    foreground: @dark;
+}
+element selected urgent {
+    background-color: @lightred;
+    foreground: @dark;
+}
+element normal normal {
+
+}
+error-message {
+    expand: true;
+    background-color: red;
+    border-color: darkred;
+    border: 2px;
+    padding: 1em;
+}
