@@ -18,7 +18,7 @@ Copy paste the files inside to see the theme being reflected on your screen
  </p>
 
 > Run :Lazy to install all the nvim configs.
-> (Read more about lazynvim)[https://github.com/folke/lazy.nvim]
+> [Read more about lazynvim](https://github.com/folke/lazy.nvim)
 
 #### Preset nvim config
 ```
